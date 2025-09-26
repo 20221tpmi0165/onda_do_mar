@@ -1,0 +1,200 @@
+
+/* styleCom.css */
+
+/* Use o mesmo estilo global de Legal.css para consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    background: linear-gradient(180deg, #eaf6ff 0%, #d1e9f7 100%);
+    color: #444;
+}
+
+/* --- Cabeçalho e Navegação (copiado de Legal.css para consistência) --- */
+header {
+    width: 100%;
+    background: linear-gradient(90deg, #0077b6, #005a8d);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #ffc300;
+}
+
+header img {
+    max-width: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-top: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-menu {
+    background-color: #0096c7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.main-menu li {
+    margin: 0 25px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.main-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #ffc300;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+.main-menu a:hover::after {
+    width: 100%;
+}
+
+.main-menu a:hover {
+    color: #ffc300;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* --- Conteúdo da Página de Contato --- */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.formulario-contato h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.intro-contato {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contato-opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Espaçamento entre os links */
+}
+
+.contato-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px; /* Limita a largura dos botões */
+    padding: 15px 20px;
+    border-radius: 50px; /* Botões mais arredondados */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contato-link i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.contato-link:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.email-link {
+    background-color: #e67e22; /* Laranja ou outra cor que remeta ao farol */
+}
+
+.email-link:hover {
+    background-color: #d35400;
+}
+
+.whatsapp-link {
+    background-color: #25d366; /* Verde do WhatsApp */
+}
+
+.whatsapp-link:hover {
+    background-color: #128c7e;
+}
+
+/* --- Rodapé (copiado de Legal.css para consistência) --- */
+footer {
+    background-color: #005a8d;
+    color: #eaf6ff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.footer-links {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #eaec48;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.creditos {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
